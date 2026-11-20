@@ -1,8 +1,277 @@
-body {
-  background-color: lightblue;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.page {
+    margin: 0;
+    background-color: #19171B;
+    color: #F1E8E2;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: #D5A6B2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F1E8E2;
+}
+
+.site-header,
+.site-nav,
+.content-card,
+.section-heading,
+.education-table,
+.hobbies-section,
+.gallery-section,
+.site-footer {
+    width: min(850px, calc(100% - 32px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header,
+.site-footer {
+    width: 100%;
+    background-color: #302630;
+    text-align: center;
+    padding: 25px;
+}
+
+.site-header {
+    margin-bottom: 24px;
+}
+
+.site-header td,
+.site-footer td {
+    text-align: center;
+}
+
+.brand-size {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.site-nav {
+    width: 100%;
+    margin-bottom: 36px;
+    padding: 12px;
+    background-color: #59404F;
+    text-align: center;
+}
+
+.site-nav td {
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.site-nav a {
+    color: #E5D5C9;
+}
+
+.content-card {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    padding: 20px;
+    background-color: #302630;
+}
+
+.home-card {
+    padding: 25px;
+}
+
+.home-card td {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.home-card img {
+    display: block;
+    width: min(350px, 100%);
+    height: 250px;
+    margin: auto;
+    object-fit: cover;
+    border: 5px solid #59404F;
+}
+
+.font-serif,
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+}
+
+.font-sans {
+    font-family: Arial, sans-serif;
+}
+
+.accent,
+.large-text,
+.brand-size {
+    color: #D5A6B2;
+}
+
+.eyebrow-color {
+    color: #B98291;
+}
+
+.soft-text {
+    color: #E5D5C9;
+}
+
+.light-text {
+    color: #F1E8E2;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+.normal-text {
+    font-size: 1rem;
+}
+
+.large-text {
+    font-size: 1.15rem;
 }
 
 h1 {
-  color: navy;
-  margin-left: 20px;
+    color: #F1E8E2;
+    font-size: 2.2rem;
+    line-height: 1.2;
+}
+
+h2,
+h3 {
+    color: #D5A6B2;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #59404F;
+    margin: 16px 0;
+}
+
+.section-heading {
+    margin-top: 28px;
+    margin-bottom: 0;
+    padding: 15px;
+}
+
+.education-table {
+    border-collapse: collapse;
+    background-color: #302630;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #59404F;
+    padding: 15px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #59404F;
+    color: #F1E8E2;
+}
+
+.education-table tr:nth-child(3) {
+    background-color: #403340;
+}
+
+.achievements-card ul,
+.experience-card ul,
+.hobbies-section ul {
+    padding-left: 24px;
+}
+
+.hobbies-section {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    border-collapse: separate;
+    border-spacing: 12px;
+}
+
+.hobbies-section td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.hobbies-section tr:nth-child(2) td:first-child {
+    background-color: #302630;
+}
+
+.hobbies-section tr:nth-child(2) td:last-child {
+    background-color: #403340;
+}
+
+.goals-card center {
+    text-align: center;
+}
+
+.gallery-section {
+    margin-top: 28px;
+    margin-bottom: 28px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.gallery-section td {
+    text-align: center;
+}
+
+.gallery-video {
+    width: 250px;
+    height: 350px;
+    max-width: 30%;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.gallery-image {
+    width: 200px;
+    height: 200px;
+    max-width: 28%;
+    object-fit: cover;
+    border: 2px solid #59404F;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.site-footer {
+    margin-top: 36px;
+}
+
+@media (max-width: 700px) {
+    .site-nav td {
+        display: inline-block;
+        padding: 6px;
+    }
+
+    .home-card td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-card img {
+        margin-top: 20px;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .gallery-video,
+    .gallery-image {
+        max-width: 44%;
+    }
 }
