@@ -27,13 +27,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 12px 28px; /* Generous horizontal spacing between links */
+    gap: 12px 28px;
     padding: 14px 20px;
 }
 
 .site-nav a {
     color: #E5D5C9;
-    font-family: Arial, sans-serif; /* Matches your other sans text */
+    font-family: Arial, sans-serif;
     font-size: 15px;
     text-decoration: none;
     white-space: nowrap;
